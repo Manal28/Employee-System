@@ -1,0 +1,73 @@
+package interfaceproject;
+
+public class EmplyeeClass{
+
+    private String name ;
+    private String job ;
+    private int numOfhours;
+    private double  hourPrice;
+    private double deductionPrice ;
+    private int absenseHours ;
+
+    
+    public EmplyeeClass (){
+        
+    }
+  
+    public EmplyeeClass(int absenceHours){
+        
+        this.absenseHours=absenceHours;
+     
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public int getNumOfhours() {
+        return numOfhours;
+    }
+
+    public void setNumOfhours(int numOfhours) {
+        this.numOfhours = numOfhours;
+    }
+
+    public double getHourPrice() {
+        return hourPrice;
+    }
+
+    public void setHourPrice(double hourPrice) {
+        this.hourPrice = hourPrice;
+    }
+
+    public double getDeductionPrice() {
+        return deductionPrice;
+    }
+
+    public void setDeductionPrice(double deductionPrice) {
+        this.deductionPrice = deductionPrice;
+    }
+
+    public int getAbsenseHours() {
+        return absenseHours;
+    }
+
+    public void setAbsenseHours(int absenseHours) {
+        this.absenseHours = absenseHours;
+    }
+    
+    
+   
+    }
