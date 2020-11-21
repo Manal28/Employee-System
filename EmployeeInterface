@@ -1,0 +1,10 @@
+package interfaceproject;
+
+
+public interface EmployeeInterface {
+    
+    public double getSalary ();
+    public double getTotalsalayAfterDeduction();
+    
+    
+}
