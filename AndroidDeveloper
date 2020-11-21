@@ -1,0 +1,46 @@
+package interfaceproject;
+
+
+public class Androiddeveloper extends EmplyeeClass implements EmployeeInterface {
+    
+    private final static double HOUR_PRICE =50;
+    private final static double DEDUCTION_PRICE=60;
+    
+
+    public Androiddeveloper (){
+        super();
+         
+    }
+    
+    public Androiddeveloper(int absenceHours){
+        super(absenceHours);
+     this.setAbsenseHours(absenceHours);
+        
+        
+    }
+    public Androiddeveloper(String name ,String jop,int absenceHours){
+       super(absenceHours);
+      this.setAbsenseHours(absenceHours);
+      this.setName(name);
+      this.setJob(jop);
+    }
+    
+    @Override
+    public double getSalary() {
+     
+        return 5000;
+    }
+
+    @Override
+    public double getTotalsalayAfterDeduction() {
+       
+        if (this.getAbsenseHours()<=10)
+            return getSalary();
+        else{
+            return getSalary()-((this.getAbsenseHours()-10)*60);
+        }
+    }
+    
+    
+    
+}
