@@ -1,0 +1,42 @@
+package interfaceproject;
+
+
+public class FlutterDeveloper extends EmplyeeClass implements EmployeeInterface{
+
+    private final static double HOUR_PRICE =100;
+    private final static double DEDUCTION_PRICE=120;
+    
+    public FlutterDeveloper(){
+        super();
+    }
+    
+    public FlutterDeveloper(int absenceHours){
+        super(absenceHours);
+        this.setAbsenseHours(absenceHours);
+        
+    }
+    public FlutterDeveloper(String name ,String jop,int absenceHours){
+       super(absenceHours);
+       this.setAbsenseHours(absenceHours);
+       this.setName(name);
+       this.setJob(jop);
+        
+    }
+    @Override
+    public double getSalary() {
+       
+        return 7000;
+    }
+
+    @Override
+    public double getTotalsalayAfterDeduction() {
+            if (this.getAbsenseHours()<=5)
+            return getSalary();
+        else{
+            return getSalary()-((this.getAbsenseHours()-10)*60);
+        }
+        
+    }
+    
+      
+}
