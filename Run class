@@ -1,0 +1,33 @@
+
+package interfaceproject;
+
+public class RunClass {
+
+    public static void main(String[] args) {
+
+        Androiddeveloper a = new Androiddeveloper("sara","Android developer",11);
+        
+        System.out.println(a.getName());
+        System.out.println(a.getJob());
+        System.out.println(a.getSalary());
+        System.out.println("_________________________________________________________");
+        System.out.println("The salary after deduction is : "+a.getTotalsalayAfterDeduction());
+        System.out.println("_____________________________________________________________________________________");
+        
+        FlutterDeveloper f =new FlutterDeveloper();
+        //look here we have to use set methods because we make an object with deafult counstractor 
+        //but in the previous example we pass name ,jop to the counstructor so we hadnot to use set methods
+        
+        f.setName("Mariam");
+        f.setJob("Flutter developer");
+        f.setAbsenseHours(7);
+        
+        System.out.println(f.getName());
+        System.out.println(f.getJob());
+        System.out.println(f.getSalary());
+        System.out.println(f.getTotalsalayAfterDeduction());
+    
+}
+
+
+}
